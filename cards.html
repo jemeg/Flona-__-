@@ -17,7 +17,7 @@
     <nav>
         <ul>
             <li><a href="index.html"><i class="fas fa-home"></i> الصفحة الرئيسية</a></li>
-            <li><a href="muntaha.html"><i class="fas fa-graduation-cap"></i> عن منتهى</a></li>
+            <li><a href="muntaha.html"><i class="fas fa-graduation-cap"></i>ملكة الجمال<i class="fas fa-crown fa-fw"></a></li>
             <li><a href="cards.html"><i class="fas fa-gamepad"></i> لعبة البطاقات</a></li>
         </ul>
     </nav>
@@ -26,24 +26,33 @@
         <div class="game-info">
             <div class="game-stats">
                 <div class="stat-item">
-                    <span class="stat-label">النقاط:</span>
+                    <span class="stat-label">✨النقاط:</span>
                     <span id="score" class="stat-value">0</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-label">المحاولات:</span>
+                    <span class="stat-label">🔮المحاولات:</span>
                     <span id="attempts" class="stat-value">0</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-label">الوقت:</span>
-                    <span id="timer" class="stat-value">00:00</span>
+                    <span id="timer" class="stat-value">⏳00:00</span>
                 </div>
             </div>
-            <div class="difficulty-selector">
-                <button class="button" data-level="easy">سهل</button>
-                <button class="button" data-level="medium">متوسط</button>
-                <button class="button" data-level="hard">صعب</button>
-            </div>
+                    <div class="difficulty-selector fairy-buttons">
+          <button class="button fairy-btn" data-level="easy">
+            <i class="fas fa-feather"></i>
+            فتاة المبتدئات
+          </button>
+          <button class="button fairy-btn" data-level="medium">
+            <i class="fas fa-moon"></i>
+            اميرة القمر
+          </button>
+          <button class="button fairy-btn" data-level="hard">
+            <i class="fas fa-fire"></i>
+            ملكة النار
+          </button>
         </div>
+      </div>
         <div class="game-container" id="gameBoard"></div>
         <div class="game-controls">
             <button id="startGame" class="button">ابدأ اللعبة <i class="fas fa-play"></i></button>

@@ -234,6 +234,166 @@ h1 {
   line-height: 1.6;
 }
 
+/* أنماط خاصة بلعبة البطاقات */
+.game-page {
+  text-align: center;
+  padding: 2rem;
+}
+
+.game-info {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-item {
+  background: rgba(255, 255, 255, 0.9); /* خلفية بيضاء مع شفافية */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-label {
+  color: #666;
+  margin-left: 0.5rem;
+}
+
+.stat-value {
+  color: #ff6b81;
+  font-weight: bold;
+}
+
+/* تحسين أزرار اختيار الصعوبة */
+.fairy-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.fairy-btn {
+  background: linear-gradient(135deg, #ff9eaf, #ff6b81);
+  border: 2px solid transparent;
+  color: white;
+  padding: 0.7rem 1.8rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 107, 129, 0.3);
+}
+
+.fairy-btn:hover {
+  background: white;
+  color: #ff6b81;
+  border: 2px solid #ff6b81;
+  transform: translateY(-3px);
+}
+
+.fairy-btn.active {
+  background: #ff6b81;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0 6px 15px rgba(255, 107, 129, 0.5);
+}
+
+/* تحسين أزرار التحكم في اللعبة */
+.button {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 107, 129, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button:hover {
+  background: white;
+  color: #ff758c;
+  box-shadow: 0 6px 20px rgba(255, 107, 129, 0.5);
+}
+
+.button:disabled {
+  background: #d3d3d3;
+  color: #999;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.card {
+  aspect-ratio: 3/4;
+  background: linear-gradient(145deg, #ff9eaf, #ffb7c5);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.flipped {
+  background: white;
+  border: 2px solid #ff9eaf;
+}
+
+.card.matched {
+  background: #e8f5e9;
+  border: 2px solid #81c784;
+  cursor: default;
+}
+
+.game-controls {
+  margin: 2rem 0;
+}
+
+.game-message {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.win-message {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.lose-message {
+  background: #ffebee;
+  color: #c62828;
+}
+
 /* Animations */
 @keyframes fadeIn {
   from {
